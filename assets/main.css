@@ -1,0 +1,68 @@
+* {
+  font-family: "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC",
+    "Helvetica Neue", "Helvetica", "Arial", "Microsoft JhengHei", wf_SegoeUI,
+    "Segoe UI", Segoe, "Segoe WP", Tahoma, Verdana, Ubuntu,
+    "Bitstream Vera Sans", "DejaVu Sans", Tahoma, 微軟正黑體, "LiHei Pro",
+    "WenQuanYi Micro Hei", "Droid Sans Fallback", "AR PL UMing TW", Roboto,
+    "Helvetica Neue", "Hiragino Maru Gothic ProN", メイリオ,
+    "ヒラギノ丸ゴ ProN W4", Meiryo, "Droid Sans", sans-serif;
+
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow:hidden auto;
+}
+
+.intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  animation: intro 0.5s ease-in-out forwards;
+  animation-delay: 1s;
+  z-index: 10;
+}
+
+@keyframes intro {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+
+.intro > img {
+  width: 16rem;
+  animation: intro-logo 1s cubic-bezier(0.63, 0, 0, 0.88) forwards;
+  transform: translateY(64px) scale(0.6);
+}
+
+@keyframes intro-logo {
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#app {
+  width: 100%;
+}

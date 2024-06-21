@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <title>鄭秀蘭手工花生糖</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta OG/TWITTER/KEYWORDS-->
+    <meta name="keywords" content="鄭秀蘭,花生糖,手工花生糖,鄭秀蘭手工花生糖" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="鄭秀蘭手工花生糖" />
+    <meta name="application-name" content="鄭秀蘭手工花生糖" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta
+      name="msapplication-config"
+      content="/assets/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="assets/main.css" />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
+"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="intro">
+      <img src="assets/images/logo.webp" alt="鄭秀蘭手工花生糖" />
+    </div>
+
+    <div id="app">
+      <div class="flex justify-content:center align-items:center p:32">
+        <img
+          src="assets/images/logo.webp"
+          class="width:16rem height:auto"
+          alt=""
+        />
+      </div>
+
+      <div>
+        <div
+          class="flex-center bg:rgba(132,37,132,0.1) flex-direction:column mb:32"
+        >
+          <div
+            class="container white-space:pre-wrap font-size:1.2rem line-height:3rem p:32"
+          >
+            {{description}}
+          </div>
+          <div
+            class="font-size:1.4rem font-weight:bold flex-center flex-direction:column"
+          >
+            {{slogan}}
+          </div>
+          <div
+            class="flex flex-center container position:relative bottom:0 mt:64 pl:32 pl:0@<md display:none@<md flex-wrap:wrap@<md max-w:1920"
+          >
+            <div
+              class="w:40% w:100%@<md z-index:2 flex align-items:center align-self:stretch"
+            >
+              <iframe
+                class="h:100% w:100% max-w:90% max-w:100%@<md border:16px|solid|white aspect-ratio:16/9@<md"
+                src="https://www.youtube.com/embed/lKTc-Hzwtp0"
+                title="介紹影片"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="w:60% w:100%@<md z-index:2">
+              <img class="w:100%" src="assets/images/banner.2.webp" alt="" />
+            </div>
+            <div
+              class="position:absolute bottom:0 left:-100vh bg:white w:300vw h:50% z-index:1"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-center">
+        <div
+          class="container display:grid p:32 gap:64px grid-template-columns:1fr|1fr|1fr|1fr@>md grid-template-columns:1fr|1fr|1fr@md grid-template-columns:1fr|1fr@sm grid-template-columns:1fr@<sm"
+        >
+          <div v-for="product in products" :key="product.id" class="p:16@<md">
+            <img
+              :src="product.img"
+              :alt="product.name"
+              class="w:100% aspect-ratio:1/1 object-fit:cover border-radius:2px"
+            />
+            <div class="font-size:1.2rem my:8">{{product.name}}</div>
+            <div class="font-size:1.2rem">NT$ {{product.price}}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-center bg:rgba(172,202,233) mb:64">
+        <div
+          class="container flex w:100% justify-content:space-between flex-wrap:wrap@<md"
+        >
+          <div
+            class="flex flex-direction:column gap:32 py:24 py:48@<md px:16 font-size:1.2rem w:100%"
+          >
+            <div>
+              <div class="font-weight:bold pb:8">訂購專線</div>
+              <div class="white-space:pre-wrap">{{phone}}</div>
+            </div>
+            <div>
+              <div class="font-weight:bold pb:8">聯絡我們</div>
+              <div class="white-space:pre-wrap line-height:1.6rem">
+                {{contactInfo}}
+              </div>
+            </div>
+            <div>
+              <div class="font-weight:bold pb:8">工廠地址</div>
+              <div class="white-space:pre-wrap">{{address}}</div>
+            </div>
+          </div>
+          <img
+            src="assets/images/footer.webp"
+            class="object-fit:contain w:40% w:100%@<md"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.master.co/css"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/vue@3.4.27/dist/vue.global.min.js
+"></script>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
