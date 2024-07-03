@@ -6,13 +6,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Meta OG/TWITTER/KEYWORDS-->
-    <meta name="description" content="鄭秀蘭傳承自鄭媽媽的好手藝，秉持著少油、少糖、少鹽的健康元素，在歷經了多年無數次嘗試之後，加入了糙米、蔓越莓、小麥等天然食材，成功讓老產品注入了活力新元素，鄭秀蘭手工花生糖只選用北港上等花生仁，還有國產沙拉油製作而成，食材通過SGS檢驗，堅持不含防腐劑，每年投保2千萬產品責任險，堅持做到『 讓朋友吃了安心；客人吃的放心！ 』">
-    <meta name="author" content="Nutwork">
-    <meta name="keywords" content="鄭秀蘭,花生糖,手工花生糖,鄭秀蘭手工花生糖" />
+    <meta
+      name="description"
+      content="鄭秀蘭傳承自鄭媽媽的好手藝，秉持著少油、少糖、少鹽的健康元素，在歷經了多年無數次嘗試之後，加入了糙米、蔓越莓、小麥等天然食材，成功讓老產品注入了活力新元素，鄭秀蘭手工花生糖只選用北港上等花生仁，還有國產沙拉油製作而成，食材通過SGS檢驗，堅持不含防腐劑，每年投保2千萬產品責任險，堅持做到『 讓朋友吃了安心；客人吃的放心！ 』"
+    />
+    <meta name="author" content="Nutwork" />
+    <meta name="keywords" content="鄭秀蘭手工花生糖,鄭秀蘭花生糖,鄭秀蘭,花生糖,手工花生糖" />
 
     <meta property="og:title" content="鄭秀蘭手工花生糖" />
-    <meta property="og:description" content="鄭秀蘭傳承自鄭媽媽的好手藝，秉持著少油、少糖、少鹽的健康元素，在歷經了多年無數次嘗試之後，加入了糙米、蔓越莓、小麥等天然食材，成功讓老產品注入了活力新元素，鄭秀蘭手工花生糖只選用北港上等花生仁，還有國產沙拉油製作而成，食材通過SGS檢驗，堅持不含防腐劑，每年投保2千萬產品責任險，堅持做到『 讓朋友吃了安心；客人吃的放心！ 』" />
+    <meta
+      property="og:description"
+      content="鄭秀蘭傳承自鄭媽媽的好手藝，秉持著少油、少糖、少鹽的健康元素，在歷經了多年無數次嘗試之後，加入了糙米、蔓越莓、小麥等天然食材，成功讓老產品注入了活力新元素，鄭秀蘭手工花生糖只選用北港上等花生仁，還有國產沙拉油製作而成，食材通過SGS檢驗，堅持不含防腐劑，每年投保2千萬產品責任險，堅持做到『 讓朋友吃了安心；客人吃的放心！ 』"
+    />
     <meta property="og:image" content="assets/images/banner.1.webp" />
     <meta property="og:url" content="https://zxl.tw" />
 
@@ -136,17 +141,29 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
           >
             <div>
               <div class="font-weight:bold pb:8">訂購專線</div>
-              <div class="white-space:pre-wrap">{{phone}}</div>
+              <div class="white-space:pre-wrap">
+                <a :href="'tel:' + phone.replace(/-/g,'')"> {{phone}} </a>
+              </div>
             </div>
             <div>
               <div class="font-weight:bold pb:8">聯絡我們</div>
-              <div class="white-space:pre-wrap line-height:1.6rem">
-                {{contactInfo}}
+              <div class="line-height:1.6rem">
+                LINE ID :
+                <a href="https://line.me/ti/p/~@lbw0974m">@lbw0974m</a>
+                <br />
+                臉書 :
+                <a href="https://www.facebook.com/familyZheng"
+                  >鄭秀蘭手工花生糖</a
+                >
               </div>
             </div>
             <div>
               <div class="font-weight:bold pb:8">工廠地址</div>
-              <div class="white-space:pre-wrap">{{address}}</div>
+              <div class="white-space:pre-wrap">
+                <a href="https://maps.app.goo.gl/dyq4ABPhiz82Tvqm8"
+                  >{{address}}</a
+                >
+              </div>
             </div>
           </div>
           <img

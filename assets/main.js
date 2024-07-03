@@ -48,8 +48,6 @@ const PRODUCTS = [
 ];
 
 const PHONE = `0910-448480`;
-const CONTATCT_INFO = `LINE ID:  @lbw0974m
-臉書搜尋：鄭秀蘭手工花生糖`;
 const ADDRESS = `南投縣鹿谷鄉瑞田村集連巷21號`;
 
 createApp({
@@ -58,14 +56,12 @@ createApp({
     const slogan = ref(SLOGAN);
     const products = ref(PRODUCTS);
     const phone = ref(PHONE);
-    const contactInfo = ref(CONTATCT_INFO);
     const address = ref(ADDRESS);
     return {
       description,
       slogan,
       products,
       phone,
-      contactInfo,
       address,
     };
   },
